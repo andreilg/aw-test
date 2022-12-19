@@ -63,18 +63,18 @@
       "openFiles": ["README.md"]
     }
   },
-  // "containerEnv": {
-  //   "CI": "false",
-  //   "NODE_ENV": "development"
-  // },
-  // "waitFor": "onCreateCommand",
+  "containerEnv": {
+    "CI": "false",
+    "NODE_ENV": "development"
+  },
+  "waitFor": "onCreateCommand",
   // "updateContentCommand": "npm install",
   // "postStartCommand": "nohup bash -c 'npm run dev &'",
-  // "forwardPorts": [1313],
-  // "portsAttributes": {
-  //   "1313": {
-  //     "label": "Web",
-  //     "onAutoForward": "openPreview"
-  //   }
-  // }
+  "forwardPorts": [1313],
+  "portsAttributes": {
+    "1313": {
+      "label": "Web",
+      "onAutoForward": "openPreview"
+    }
+  }
 }
