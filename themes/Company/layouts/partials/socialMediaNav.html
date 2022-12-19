@@ -1,0 +1,10 @@
+{{ $socialMediaSites := slice "facebook" "twitter" "linkedin" "instagram" }}
+
+
+<nav>
+  {{ range $socialMediaSites }}
+    {{ if isset $.Site.Params . }}
+      <a href="{{ index $.Site.Params . }}">{{ . }}</a>
+    {{ end }}
+  {{ end }}
+</nav>

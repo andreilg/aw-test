@@ -1,0 +1,11 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'Company'
+
+[params]
+name = 'Go The Gopher'
+year = '2022'
+facebook = 'https://facebook.com/'
+linkedin = 'https://linkedin.com/'
+instagram = 'https://instagram.com/'
