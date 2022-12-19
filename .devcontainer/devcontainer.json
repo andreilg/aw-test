@@ -68,7 +68,7 @@
     "NODE_ENV": "development"
   },
   "waitFor": "onCreateCommand",
-  // "updateContentCommand": "npm install",
+  "updateContentCommand": "npm install",
   "postStartCommand": "nohup bash -c 'npm run dev &'",
   "forwardPorts": [1313],
   "portsAttributes": {
