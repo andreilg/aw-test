@@ -1,80 +1,80 @@
 {
   "name": "Jamstack",
   "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
-  "features": {
-    // General
-    "ghcr.io/devcontainers/features/git-lfs:1": {},
-    "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "18"
-    },
+  // "features": {
+  //   // General
+  //   "ghcr.io/devcontainers/features/git-lfs:1": {},
+  //   "ghcr.io/devcontainers/features/git:1": {},
+  //   "ghcr.io/devcontainers/features/node:1": {
+  //     "version": "18"
+  //   },
 
-    // Static Site Generator
-    "ghcr.io/devcontainers/features/go:1": {},
-    "ghcr.io/devcontainers/features/hugo:1": {
-      "version": "0.91.2",
-      "extended": true
-    }
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        // General
-        "eamodio.gitlens",
-        "EditorConfig.EditorConfig",
-        "esbenp.prettier-vscode",
-        "GitHub.vscode-pull-request-github",
-        "redhat.vscode-yaml",
-        "Tyriar.sort-lines",
+  //   // Static Site Generator
+  //   "ghcr.io/devcontainers/features/go:1": {},
+  //   "ghcr.io/devcontainers/features/hugo:1": {
+  //     "version": "0.91.2",
+  //     "extended": true
+  //   }
+  // },
+  // "customizations": {
+  //   "vscode": {
+  //     "extensions": [
+  //       // General
+  //       "eamodio.gitlens",
+  //       "EditorConfig.EditorConfig",
+  //       "esbenp.prettier-vscode",
+  //       "GitHub.vscode-pull-request-github",
+  //       "redhat.vscode-yaml",
+  //       "Tyriar.sort-lines",
 
-        // Static Site Generator
-        "budparr.language-hugo-vscode",
-        "eliostruyf.vscode-hugo-themer"
+  //       // Static Site Generator
+  //       "budparr.language-hugo-vscode",
+  //       "eliostruyf.vscode-hugo-themer"
 
-        // "christian-kohler.npm-intellisense",
-        // "DavidAnson.vscode-markdownlint",
-        // "dbaeumer.vscode-eslint",
-        // "patbenatar.advanced-new-file"
-        // "sleistner.vscode-fileutils",
-      ],
-      "settings": {
-        // General
-        "editor.formatOnPaste": true,
-        "editor.formatOnSave": true,
-        "editor.linkedEditing": true,
-        "files.autoSave": "onFocusChange",
-        "telemetry.telemetryLevel": "off",
-        "terminal.integrated.defaultProfile.linux": "zsh",
+  //       // "christian-kohler.npm-intellisense",
+  //       // "DavidAnson.vscode-markdownlint",
+  //       // "dbaeumer.vscode-eslint",
+  //       // "patbenatar.advanced-new-file"
+  //       // "sleistner.vscode-fileutils",
+  //     ],
+  //     "settings": {
+  //       // General
+  //       "editor.formatOnPaste": true,
+  //       "editor.formatOnSave": true,
+  //       "editor.linkedEditing": true,
+  //       "files.autoSave": "onFocusChange",
+  //       "telemetry.telemetryLevel": "off",
+  //       "terminal.integrated.defaultProfile.linux": "zsh",
 
-        // GitLens
-        "gitlens.currentLine.enabled": false,
+  //       // GitLens
+  //       "gitlens.currentLine.enabled": false,
 
-        // YAML
-        "redhat.telemetry.enabled": false,
+  //       // YAML
+  //       "redhat.telemetry.enabled": false,
 
-        // Prettier
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "prettier.configPath": "configs/prettier/.prettierrc.yaml",
-        "prettier.ignorePath": ".gitignore",
-        "prettier.requireConfig": true
-      }
-    },
-    "codespaces": {
-      "openFiles": ["README.md"]
-    }
-  },
-  "containerEnv": {
-    "CI": "false",
-    "NODE_ENV": "development"
-  },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "npm install",
-  "postStartCommand": "nohup bash -c 'npm run dev &'",
-  "forwardPorts": [1313],
-  "portsAttributes": {
-    "1313": {
-      "label": "Web",
-      "onAutoForward": "openPreview"
-    }
-  }
+  //       // Prettier
+  //       "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //       "prettier.configPath": "configs/prettier/.prettierrc.yaml",
+  //       "prettier.ignorePath": ".gitignore",
+  //       "prettier.requireConfig": true
+  //     }
+  //   },
+  //   "codespaces": {
+  //     "openFiles": ["README.md"]
+  //   }
+  // },
+  // "containerEnv": {
+  //   "CI": "false",
+  //   "NODE_ENV": "development"
+  // },
+  // "waitFor": "onCreateCommand",
+  // "updateContentCommand": "npm install",
+  // "postStartCommand": "nohup bash -c 'npm run dev &'",
+  // "forwardPorts": [1313],
+  // "portsAttributes": {
+  //   "1313": {
+  //     "label": "Web",
+  //     "onAutoForward": "openPreview"
+  //   }
+  // }
 }
