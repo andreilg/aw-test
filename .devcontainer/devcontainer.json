@@ -1,21 +1,21 @@
 {
   "name": "Jamstack",
   "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
-  // "features": {
-  //   // General
-  //   "ghcr.io/devcontainers/features/git-lfs:1": {},
-  //   "ghcr.io/devcontainers/features/git:1": {},
-  //   "ghcr.io/devcontainers/features/node:1": {
-  //     "version": "18"
-  //   },
+  "features": {
+    // General
+    "ghcr.io/devcontainers/features/git-lfs:1": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    },
 
-  //   // Static Site Generator
-  //   "ghcr.io/devcontainers/features/go:1": {},
-  //   "ghcr.io/devcontainers/features/hugo:1": {
-  //     "version": "0.91.2",
-  //     "extended": true
-  //   }
-  // },
+    // Static Site Generator
+    "ghcr.io/devcontainers/features/go:1": {},
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "0.91.2",
+      "extended": true
+    }
+  },
   // "customizations": {
   //   "vscode": {
   //     "extensions": [
