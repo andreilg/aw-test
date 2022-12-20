@@ -19,6 +19,7 @@
     "vscode": {
       "extensions": [
         // General
+        "bierner.markdown-mermaid",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
