@@ -69,7 +69,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
-  "postStartCommand": "nohup bash -c 'npm run dev &'",
+  // "postStartCommand": "nohup bash -c 'npm run dev &'",
   "forwardPorts": [1313],
   "portsAttributes": {
     "1313": {
