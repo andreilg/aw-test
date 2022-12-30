@@ -43,11 +43,7 @@
         // "wix.vscode-import-cost"
       ],
       "settings": {
-        // General
-        "editor.formatOnPaste": true,
-        "editor.formatOnSave": true,
-        "editor.linkedEditing": true,
-        "files.autoSave": "onFocusChange",
+        // Debian
         "terminal.integrated.defaultProfile.linux": "zsh",
 
         // GitLens
@@ -55,9 +51,16 @@
 
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "prettier.configPath": "configs/prettier/.prettierrc.toml",
         "prettier.ignorePath": ".gitignore",
-        "prettier.requireConfig": true
+        "prettier.requireConfig": true,
+
+        // TypeScript
+        "typescript.updateImportsOnFileMove.enabled": "always",
+
+        // ESLint
+              "eslint.options": {
+          "ignorePath": ".gitignore",
+        },
       }
     },
     "codespaces": {
