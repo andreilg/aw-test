@@ -37,8 +37,10 @@
         // "bierner.markdown-mermaid",
         // "christian-kohler.npm-intellisense",
         // "DavidAnson.vscode-markdownlint",
+        // "humao.rest-client"
         // "patbenatar.advanced-new-file"
         // "sleistner.vscode-fileutils",
+        // "wix.vscode-import-cost"
       ],
       "settings": {
         // General
