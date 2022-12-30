@@ -56,7 +56,7 @@
 
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "prettier.configPath": "configs/prettier/.prettierrc.yaml",
+        "prettier.configPath": "configs/prettier/.prettierrc.toml",
         "prettier.ignorePath": ".gitignore",
         "prettier.requireConfig": true
       }
