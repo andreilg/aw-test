@@ -72,9 +72,9 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
   // "postStartCommand": "nohup bash -c 'npm run dev &'",
-  "forwardPorts": [1313],
+  "forwardPorts": [8888],
   "portsAttributes": {
-    "1313": {
+    "8888": {
       "label": "Web",
       "onAutoForward": "openPreview"
     }
