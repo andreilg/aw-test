@@ -1,5 +1,5 @@
 [[overrides]]
-files = [ "*.html" ]
+files = ["*.html"]
 
-  [overrides.options]
-  parser = "go-template"
+[overrides.options]
+parser = "go-template"

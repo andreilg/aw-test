@@ -19,7 +19,7 @@
     "vscode": {
       "extensions": [
         // General
-        "bierner.markdown-mermaid",
+        "DavidAnson.vscode-markdownlint",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
@@ -34,6 +34,7 @@
         "budparr.language-hugo-vscode",
         "eliostruyf.vscode-hugo-themer"
 
+        // "bierner.markdown-mermaid",
         // "christian-kohler.npm-intellisense",
         // "DavidAnson.vscode-markdownlint",
         // "patbenatar.advanced-new-file"
@@ -45,14 +46,10 @@
         "editor.formatOnSave": true,
         "editor.linkedEditing": true,
         "files.autoSave": "onFocusChange",
-        "telemetry.telemetryLevel": "off",
         "terminal.integrated.defaultProfile.linux": "zsh",
 
         // GitLens
         "gitlens.currentLine.enabled": false,
-
-        // YAML
-        "redhat.telemetry.enabled": false,
 
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
