@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "github.codespaces",
+    "github.github-vscode-theme",
+    "github.remotehub",
+    "github.vscode-pull-request-github",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vsliveshare.vsliveshare-pack",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

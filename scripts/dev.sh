@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npx netlify dev
+hugo server --buildDrafts --noHTTPCache --disableFastRender

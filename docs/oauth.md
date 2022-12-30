@@ -1,8 +1,8 @@
 sequenceDiagram
-    autonumber
-    participant Client
-    participant OAuthProvider
-    participant Server
+autonumber
+participant Client
+participant OAuthProvider
+participant Server
 
     activate Client
     Client->>+OAuthProvider: Request access token

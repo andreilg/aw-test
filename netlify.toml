@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-command = "hugo server --buildDrafts --noHTTPCache --disableFastRender"
+command = "npm run build"
 functions = "netlify/functions"
 publish = "public"
 
