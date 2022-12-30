@@ -5,6 +5,7 @@
     "build": "bash scripts/build.sh",
     "dev": "bash scripts/dev.sh",
     "format": "bash scripts/format.sh",
+    "lint": "bash scripts/lint.sh",
     "prepare": "bash scripts/prepare.sh"
   },
   "devDependencies": {
