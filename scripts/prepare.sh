@@ -1,5 +1,5 @@
 #!/bin/bash
 
 if [[ "$CI" == "false" && "$NODE_ENV" == "development" ]]; then
-# npx husky install
+  npx husky install
 fi
