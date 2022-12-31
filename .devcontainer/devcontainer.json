@@ -85,6 +85,7 @@
     "NODE_ENV": "development"
   },
   "waitFor": "onCreateCommand",
+  "onCreateCommand": "bash .devcontainer/scripts/onCreateCommand.sh > ~/onCreateCommand.log",
   "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
   // "postStartCommand": "nohup bash -c .devcontainer/scripts/postStartCommand.sh > ~/postStartCommand.log",
   "forwardPorts": [8888],
