@@ -1,3 +1,4 @@
 #!/bin/bash
 
-npm install
+sudo apt install shellcheck  \
+  && npm install
