@@ -1,10 +1,10 @@
 # General
 *.env
-build/
-CHANGELOG.md
 coverage/
+
+# Build Artifacts
+build/
 dist/
-nohup.out
 public/
 
 # Assets

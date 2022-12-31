@@ -1,5 +1,38 @@
 # General
-CHANGELOG.md
+*.env
+coverage/
+
+# Build Artifacts
+build/
+dist/
+public/
+
+# Assets
+*.avif
+*.jpeg
+*.mp3
+*.mp4
+*.png
+*.wav
+*.webp
+
+# File Extensions
+*.html5
+*.jpg
+*.markdown
+*.yml
 
 # Node
+node_modules/
+
+# Hugo
+.hugo_build.lock
+resources/
+
+# Netlify
+.netlify/*
+!.netlify/state.json
+
+## Prettier - Generated Files
+CHANGELOG.md
 package-lock.json
