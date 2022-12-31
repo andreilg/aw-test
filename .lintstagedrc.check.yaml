@@ -1,7 +1,0 @@
-"{*, __parallel-1__ }":
-  - npm run format:check
-"{*, __parallel-2__ }":
-  - npm test
-
-"*.{js,ts,cjs,cts,mjs,mts}":
-  - npm run lint:es

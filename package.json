@@ -6,7 +6,9 @@
     "dev": "bash scripts/dev.sh",
     "format": "bash scripts/format.sh",
     "lint": "bash scripts/lint.sh",
-    "prepare": "bash scripts/prepare.sh"
+    "prepare": "bash scripts/prepare.sh",
+    "seed": "bash scripts/seed.sh",
+    "test": "bash scripts/test.sh"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.47.1",

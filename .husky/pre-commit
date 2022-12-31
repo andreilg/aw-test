@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# npx lint-staged --config .lintstagedrc.write.yaml \
-#   && npx lint-staged --config .lintstagedrc.check.yaml
+npx lint-staged

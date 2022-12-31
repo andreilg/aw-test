@@ -1,18 +1,33 @@
 # General
+*.env
 build/
+CHANGELOG.md
 coverage/
 dist/
-public/
-*.env
-CHANGELOG.md
 nohup.out
+public/
+
+# Assets
+*.avif
+*.jpeg
+*.mp3
+*.mp4
+*.png
+*.wav
+*.webp
+
+# File Extensions
+*.html5
+*.jpg
+*.markdown
+*.yml
 
 # Node
 node_modules/
 
 # Hugo
-resources/
 .hugo_build.lock
+resources/
 
 # Netlify
 .netlify/*
