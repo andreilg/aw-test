@@ -43,7 +43,22 @@
         // "wix.vscode-import-cost"
       ],
       "settings": {
-        // Debian
+        // General
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.linkedEditing": true,
+        "explorer.fileNesting.enabled": true,
+        "files.autoSave": "onFocusChange",
+        "git.autofetch": true,
+        "search.exclude": {
+          "**/*.code-search": true,
+          "**/bower_components/": true,
+          "**/node_modules/": true,
+          "**/package-lock.json": true
+        },
+        "typescript.updateImportsOnFileMove.enabled": "always",
+
+        // ZSH
         "terminal.integrated.defaultProfile.linux": "zsh",
 
         // GitLens
@@ -54,13 +69,10 @@
         "prettier.ignorePath": ".gitignore",
         "prettier.requireConfig": true,
 
-        // TypeScript
-        "typescript.updateImportsOnFileMove.enabled": "always",
-
         // ESLint
-              "eslint.options": {
-          "ignorePath": ".gitignore",
-        },
+        "eslint.options": {
+          "ignorePath": ".gitignore"
+        }
       }
     },
     "codespaces": {
@@ -72,8 +84,8 @@
     "NODE_ENV": "development"
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "npm install",
-  // "postStartCommand": "nohup bash -c 'npm run dev &'",
+  "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
+  // "postStartCommand": "nohup bash -c .devcontainer/scripts/postStartCommand.sh > ~/postStartCommand.log",
   "forwardPorts": [8888],
   "portsAttributes": {
     "8888": {
