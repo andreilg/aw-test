@@ -19,6 +19,7 @@
     "vscode": {
       "extensions": [
         // General
+        "christian-kohler.npm-intellisense",
         "DavidAnson.vscode-markdownlint",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
@@ -26,6 +27,7 @@
         "GitHub.vscode-pull-request-github",
         "redhat.vscode-yaml",
         "Tyriar.sort-lines",
+        "wix.vscode-import-cost",
 
         // TypeScript
         "dbaeumer.vscode-eslint",
@@ -35,12 +37,9 @@
         "eliostruyf.vscode-hugo-themer"
 
         // "bierner.markdown-mermaid",
-        // "christian-kohler.npm-intellisense",
-        // "DavidAnson.vscode-markdownlint",
         // "humao.rest-client"
         // "patbenatar.advanced-new-file"
         // "sleistner.vscode-fileutils",
-        // "wix.vscode-import-cost"
       ],
       "settings": {
         // General
