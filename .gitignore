@@ -2,6 +2,10 @@
 *.env
 coverage/
 
+# Generated
+CHANGELOG.md
+package-lock.json
+
 # Build Artifacts
 build/
 dist/

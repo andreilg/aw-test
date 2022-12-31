@@ -48,14 +48,7 @@
         "redhat.telemetry.enabled": true,
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "prettier.configPath": ".prettierrc.toml",
-        "prettier.ignorePath": ".prettierignore",
-        "prettier.requireConfig": true,
-        // ESLint
-        "eslint.options": {
-          "overrideConfigFile": ".eslintrc.yaml",
-          "ignorePath": ".eslintignore"
-        },
+        "prettier.requireConfig": true
       }
     },
     "codespaces": {

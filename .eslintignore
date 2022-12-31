@@ -1,6 +1,7 @@
 ### ESLint ###
 # Blacklist
 *
+!*/
 
 # Whitelist
 !*.ts

@@ -1,9 +1,11 @@
 ### Prettier ###
 # Blacklist
 *
+!*/
 
 # Whitelist
 # TODO: list filetypes to whitelist here
+!*.ts
 
 # Generated Files
 CHANGELOG.md
