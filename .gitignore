@@ -16,7 +16,7 @@ public/
 *.wav
 *.webp
 
-# File Extensions
+# Alternative File Extensions
 *.html5
 *.jpg
 *.markdown
