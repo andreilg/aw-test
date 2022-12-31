@@ -1,1 +1,1 @@
-Jamstack
+# Jamstack Application Template
