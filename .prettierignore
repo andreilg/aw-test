@@ -1,3 +1,15 @@
+### Prettier ###
+# Blacklist
+*
+
+# Whitelist
+# TODO: list filetypes to whitelist here
+
+# Generated Files
+CHANGELOG.md
+package-lock.json
+
+### Git ###
 # General
 *.env
 coverage/
@@ -32,7 +44,3 @@ resources/
 # Netlify
 .netlify/*
 !.netlify/state.json
-
-## Prettier - Generated Files
-CHANGELOG.md
-package-lock.json
