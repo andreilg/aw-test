@@ -4,7 +4,11 @@
 !*/
 
 # Whitelist
-# TODO: list filetypes to whitelist here
+!package.json
+!*.sh
+!.husky/*
+!Dockerfile
+!.*ignore
 !*.ts
 
 # Generated Files

@@ -3,3 +3,9 @@ files = ["*.html"]
 
 [overrides.options]
 parser = "go-template"
+
+[[overrides]]
+files = [".eslintignore"]
+
+[overrides.options]
+parser = "sh"
