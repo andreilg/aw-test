@@ -1,3 +1,3 @@
 #!/bin/bash
 
-# npx jest --passWithNoTests --bail --findRelatedTests --coverage $@
+# npx jest --passWithNoTests --bail --findRelatedTests --coverage "${@}"

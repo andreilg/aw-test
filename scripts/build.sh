@@ -2,4 +2,4 @@
 
 npx rimraf dist \
   && npx tsc \
-  && hugo --minify --baseURL "$DEPLOY_PRIME_URL"
+  && hugo --minify --baseURL "${DEPLOY_PRIME_URL}"

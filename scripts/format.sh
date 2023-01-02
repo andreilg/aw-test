@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npx prettier --ignore-unknown --no-error-on-unmatched-pattern --check "$@"
+npx prettier --ignore-unknown --no-error-on-unmatched-pattern --check "${@}"
