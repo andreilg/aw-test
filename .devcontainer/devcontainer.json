@@ -28,7 +28,7 @@
         "timonwong.shellcheck",
         "Tyriar.sort-lines",
         "wix.vscode-import-cost",
-        // "foxundermoon.shell-format",
+
         // TypeScript
         "dbaeumer.vscode-eslint",
         // Static Site Generator
@@ -42,10 +42,20 @@
       "settings": {
         // ZSH
         "terminal.integrated.defaultProfile.linux": "zsh",
+
+        // ShellCheck
+        "shellcheck.disableVersionCheck": true,
+        "shellcheck.executablePath": "node_modules/shellcheck/shellcheck-stable/shellcheck",
+        "shellcheck.ignorePatterns": {
+          "*": true
+        },
+
         // GitLens
         "gitlens.currentLine.enabled": false,
+
         // YAML
         "redhat.telemetry.enabled": true,
+
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "prettier.requireConfig": true
