@@ -45,13 +45,8 @@
 
         // ShellCheck
         "shellcheck.disableVersionCheck": true,
-        "shellcheck.ignorePatterns": {
-          "**/*": true,
-          "!scripts/*.sh": true,
-          "!.devcontainer/scripts/*.sh": true,
-          "!.husky/*": true,
-          ".husky/_": true,
-          ".husky/.gitignore": true
+                    "shellcheck.ignorePatterns": {
+          "!{.devcontainer/scripts/*.sh,.husky/*,scripts/*.sh}": true,
         },
 
         // GitLens
