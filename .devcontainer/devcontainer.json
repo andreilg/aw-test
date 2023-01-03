@@ -45,9 +45,8 @@
 
         // ShellCheck
         "shellcheck.disableVersionCheck": true,
-        // "shellcheck.executablePath": "./node_modules/.bin/shellcheck",
         "shellcheck.ignorePatterns": {
-          "*": true
+          "**/scripts/*.sh": true
         },
 
         // GitLens
