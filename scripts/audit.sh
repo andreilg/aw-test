@@ -1,3 +1,3 @@
-#/bin/bash
+#2/bin/bash
 
 npx audit-ci
