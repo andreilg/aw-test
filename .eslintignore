@@ -6,19 +6,19 @@
 # Whitelist
 !*.ts
 
-# Generated Files
+# Generated
+.eslintignore
+.gitignore
+.prettierignore
 CHANGELOG.md
 package-lock.json
 
 ### Git ###
-# General
-*.env
-coverage/
-
-# Build Artifacts
-build/
-dist/
-public/
+# Alternative Extensions
+*.html5
+*.jpg
+*.markdown
+*.yml
 
 # Assets
 *.avif
@@ -29,14 +29,11 @@ public/
 *.wav
 *.webp
 
-# Alternative File Extensions
-*.html5
-*.jpg
-*.markdown
-*.yml
-
-# Node
-node_modules/
+# Build Artifacts
+build/
+coverage/
+dist/
+public/
 
 # Hugo
 .hugo_build.lock
@@ -45,3 +42,9 @@ resources/
 # Netlify
 .netlify/*
 !.netlify/state.json
+
+# Node
+node_modules/
+
+# Secrets
+*.env

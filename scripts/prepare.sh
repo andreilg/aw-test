@@ -1,5 +1,4 @@
 #!/bin/bash
 
-if [[ "${CI}" == 'false' && "${NODE_ENV}" == 'development' ]]; then
-  npx husky install
-fi
+bash scripts/prepare_src/build_ignores.sh
+bash scripts/prepare_src/install_husky.sh
