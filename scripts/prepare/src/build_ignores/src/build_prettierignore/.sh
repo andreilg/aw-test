@@ -1,12 +1,12 @@
 #!/bin/bash
 
-WORKDIR="scripts/prepare/src/build_ignores/src/build_prettierignore/src/"
+WORKDIR=scripts/prepare/src/build_ignores/src/build_prettierignore/src/
 
-rm ".prettierignore"
+rm .prettierignore
 {
-  echo "$(< "${WORKDIR}.alternativeextensionsignore")"
+  echo "$(< "${WORKDIR}".generatedignore)"
   printf "\n"
 
-  printf "### Git ###"
-  echo "$(< ".gitignore")"
-} >> ".prettierignore"
+  printf "### Git ###\n"
+  echo "$(< .gitignore)"
+} >> .prettierignore

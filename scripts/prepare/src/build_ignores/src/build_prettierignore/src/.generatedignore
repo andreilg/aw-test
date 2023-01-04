@@ -1,0 +1,6 @@
+# Generated
+.eslintignore
+.gitignore
+.prettierignore
+CHANGELOG.md
+package-lock.json

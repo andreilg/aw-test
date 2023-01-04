@@ -6,7 +6,7 @@
     "dev": "bash scripts/dev/.sh",
     "format": "bash scripts/format/.sh",
     "lint": "bash scripts/lint/.sh",
-    "prepare": "",
+    "prepare": "bash scripts/prepare/.sh",
     "seed": "bash scripts/seed/.sh",
     "test": "bash scripts/test/.sh"
   },

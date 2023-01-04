@@ -72,7 +72,6 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand/.sh > ~/updateContentCommand.log",
-  // "postStartCommand": "nohup bash -c .devcontainer/scripts/postStartCommand/.sh > ~/postStartCommand.log",
   "forwardPorts": [8888],
   "portsAttributes": {
     "8888": {

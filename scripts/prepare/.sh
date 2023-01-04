@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# WORKDIR="scripts/prepare/src/"
+WORKDIR=scripts/prepare/src/
 
-# bash "${WORKDIR}build_ignores/.sh"
-# bash "${WORKDIR}install_husky/.sh"
+bash "${WORKDIR}"build_ignores/.sh
+bash "${WORKDIR}"install_husky/.sh
