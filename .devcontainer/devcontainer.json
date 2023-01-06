@@ -13,6 +13,7 @@
     "ghcr.io/lukewiwa/features/shellcheck:0": {
       "version": "v0.9.0"
     },
+
     // Static Site Generator
     "ghcr.io/devcontainers/features/go:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {
@@ -37,11 +38,14 @@
         "timonwong.shellcheck",
         "Tyriar.sort-lines",
         "wix.vscode-import-cost",
+
         // TypeScript
         "dbaeumer.vscode-eslint",
+
         // Static Site Generator
         "budparr.language-hugo-vscode",
         "eliostruyf.vscode-hugo-themer"
+
         // "bierner.markdown-mermaid",
         // "humao.rest-client"
         // "patbenatar.advanced-new-file"
@@ -50,24 +54,27 @@
       "settings": {
         // ZSH
         "terminal.integrated.defaultProfile.linux": "zsh",
+
         // ShellCheck
-        "shellcheck.disableVersionCheck": true,
+        "shellcheck.disableVersionCheck": false,
+        "shellcheck.executablePath": "shellcheck",
         "shellcheck.ignorePatterns": {
           "!{.devcontainer/scripts/**/*.sh,.husky/*,scripts/**/*.sh}": true
         },
+
         // GitLens
         "gitlens.currentLine.enabled": false,
+
         // YAML
         "redhat.telemetry.enabled": true,
+
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "prettier.requireConfig": true
       }
     },
     "codespaces": {
-      "openFiles": [
-        "README.md"
-      ]
+      "openFiles": ["README.md"]
     }
   },
   "containerEnv": {
@@ -76,9 +83,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
-  "forwardPorts": [
-    8888
-  ],
+  "forwardPorts": [8888],
   "portsAttributes": {
     "8888": {
       "label": "Web",

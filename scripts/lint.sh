@@ -2,9 +2,8 @@
 
 for FILE in "${@}"; do
   case "${FILE}" in
-    *.sh)
-      echo 'hello'
-      # shellcheck "${FILE}"
+    *.sh | .husky/*)
+      shellcheck --norc "${FILE}"
       ;;
 
     *.ts)
@@ -13,8 +12,7 @@ for FILE in "${@}"; do
       ;;
 
     Dockerfile)
-      echo 'hello'
-      # hadolint "${FILE}"
+      hadolint "${FILE}"
       ;;
 
     # *.ts)
