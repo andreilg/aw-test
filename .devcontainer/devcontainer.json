@@ -8,7 +8,7 @@
       "version": "18"
     },
     "ghcr.io/dhoeric/features/hadolint:1": {
-      "version": "2.12.0"
+      "version": "2.10.0"
     },
     "ghcr.io/lukewiwa/features/shellcheck:0": {
       "version": "v0.9.0"
@@ -56,6 +56,7 @@
         "terminal.integrated.defaultProfile.linux": "zsh",
 
         // ShellCheck
+        "shellcheck.customArgs": ["--norc"],
         "shellcheck.disableVersionCheck": false,
         "shellcheck.executablePath": "shellcheck",
         "shellcheck.ignorePatterns": {
