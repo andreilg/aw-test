@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKDIR=scripts/prepare/src/build_ignores/src/build_prettierignore/src/
+WORKDIR=scripts/prepare/build_ignores/build_prettierignore/
 
 rm .prettierignore
 {

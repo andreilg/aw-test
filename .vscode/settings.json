@@ -10,5 +10,10 @@
     "CHANGELOG.md": true,
     "package-lock.json": true
   },
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "hadolint.hadolintPath": "hadolint",
+  "hadolint.cliOptions": ["--no-color", "--ignore", "DL3000"],
+  "hadolint.maxNumberOfProblems": 100,
+  "hadolint.outputLevel": "error"
 }

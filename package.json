@@ -1,14 +1,14 @@
 {
   "type": "module",
   "scripts": {
-    "audit": "bash scripts/audit/.sh",
-    "build": "bash scripts/build/.sh",
-    "dev": "bash scripts/dev/.sh",
-    "format": "bash scripts/format/.sh",
-    "lint": "bash scripts/lint/.sh",
-    "prepare": "bash scripts/prepare/.sh",
-    "seed": "bash scripts/seed/.sh",
-    "test": "bash scripts/test/.sh"
+    "audit": "bash scripts/audit.sh",
+    "build": "bash scripts/build.sh",
+    "dev": "bash scripts/dev.sh",
+    "format": "bash scripts/format.sh",
+    "lint": "bash scripts/lint.sh",
+    "prepare": "bash scripts/prepare.sh",
+    "seed": "bash scripts/seed.sh",
+    "test": "bash scripts/test.sh"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.47.1",
@@ -25,7 +25,6 @@
     "prettier-plugin-sh": "0.12.8",
     "prettier-plugin-toml": "0.3.1",
     "rimraf": "^3.0.2",
-    "shellcheck": "1.1.0",
     "typescript": "^4.9.4"
   }
 }

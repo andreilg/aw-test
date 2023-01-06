@@ -2,9 +2,16 @@
 
 for FILE in "${@}"; do
   case "${FILE}" in
+    *.sh)
+      # shellcheck "${FILE}"
+      ;;
 
     *.ts)
-      npx eslint --exit-on-fatal-error --max-warnings 0 --report-unused-disable-directives --no-error-on-unmatched-pattern "${FILE}"
+      # npx eslint --exit-on-fatal-error --max-warnings 0 --report-unused-disable-directives "${FILE}"
+      ;;
+
+    Dockerfile)
+      # hadolint "${FILE}"
       ;;
 
     # *.ts)

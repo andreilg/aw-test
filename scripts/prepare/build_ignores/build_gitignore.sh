@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKDIR=scripts/prepare/src/build_ignores/src/build_gitignore/src/
+WORKDIR=scripts/prepare/build_ignores/build_gitignore/
 
 rm .gitignore
 {
