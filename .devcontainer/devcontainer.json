@@ -34,7 +34,8 @@
         "exiasr.hadolint",
         "GitHub.vscode-pull-request-github",
         "ionutvmi.path-autocomplete",
-        "redhat.vscode-yaml",
+        "arahata.linter-actionlint",
+        // "redhat.vscode-yaml",
         "timonwong.shellcheck",
         "Tyriar.sort-lines",
         "wix.vscode-import-cost",
@@ -66,8 +67,8 @@
         // GitLens
         "gitlens.currentLine.enabled": false,
 
-        // YAML
-        "redhat.telemetry.enabled": true,
+        // // YAML
+        // "redhat.telemetry.enabled": true,
 
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",

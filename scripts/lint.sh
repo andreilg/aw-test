@@ -2,6 +2,10 @@
 
 for FILE in "${@}"; do
   case "${FILE}" in
+    .github/workflows/*.yaml)
+      actionlint -shellcheck="shellcheck" -pyflakes=""
+      ;;
+
     *.sh | .husky/*)
       shellcheck --norc "${FILE}"
       ;;
