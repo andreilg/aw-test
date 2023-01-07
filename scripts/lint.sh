@@ -1,12 +1,14 @@
 #!/bin/bash
 
+WORKDIR="${PWD}"
+
 for FILE in "${@}"; do
   case "${FILE}" in
-    .github/workflows/*.yaml)
+    "${WORKDIR}"/.github/workflows/*.yaml)
       actionlint -pyflakes= "${FILE}"
       ;;
 
-    *.sh | "${PWD}"/.husky/*)
+    *.sh | "${WORKDIR}"/.husky/*)
       shellcheck --norc "${FILE}" > tst.txt
       ;;
 
@@ -16,18 +18,16 @@ for FILE in "${@}"; do
       ;;
 
     *Dockerfile)
-      echo "${FILE}" > tst.txt
       hadolint "${FILE}"
       ;;
 
-    # *.ts)
+    # *.scss)
     # postcss --config path/to/your/config --replace
     # stylelint --syntax=scss
     # ;;
 
-    *)
-      echo "---TEST---" > tst.txt
-      ;;
+    *) ;;
 
   esac
+
 done
