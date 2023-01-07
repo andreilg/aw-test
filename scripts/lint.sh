@@ -6,7 +6,7 @@ for FILE in "${@}"; do
       actionlint -pyflakes= "${FILE}"
       ;;
 
-    "${PWD}"/.husky/idk)
+    *.sh | "${PWD}"/.husky/*)
       shellcheck --norc "${FILE}" > tst.txt
       ;;
 
@@ -15,7 +15,7 @@ for FILE in "${@}"; do
       # npx eslint --exit-on-fatal-error --max-warnings 0 --report-unused-disable-directives "${FILE}"
       ;;
 
-    *Dockerfile)
+    "${PWD}"/Dockerfile)
       hadolint "${FILE}"
       ;;
 
