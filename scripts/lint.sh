@@ -24,7 +24,9 @@ for FILE in "${@}"; do
     # stylelint --syntax=scss
     # ;;
 
-    *) ;;
+    *)
+      echo "---TEST---"
+      ;;
 
   esac
 done
