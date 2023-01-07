@@ -16,6 +16,7 @@ for FILE in "${@}"; do
       ;;
 
     "${PWD}"/Dockerfile)
+      echo "${FILE}" > tst.txt
       hadolint "${FILE}"
       ;;
 
