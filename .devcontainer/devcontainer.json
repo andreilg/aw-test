@@ -25,6 +25,7 @@
     "vscode": {
       "extensions": [
         // General
+        "arahata.linter-actionlint",
         "christian-kohler.npm-intellisense",
         "DavidAnson.vscode-markdownlint",
         "dbankier.vscode-quick-select",
@@ -34,8 +35,7 @@
         "exiasr.hadolint",
         "GitHub.vscode-pull-request-github",
         "ionutvmi.path-autocomplete",
-        "arahata.linter-actionlint",
-        // "redhat.vscode-yaml",
+        "redhat.vscode-yaml",
         "timonwong.shellcheck",
         "Tyriar.sort-lines",
         "wix.vscode-import-cost",
