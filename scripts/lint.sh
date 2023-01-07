@@ -6,7 +6,7 @@ for FILE in "${@}"; do
       actionlint -pyflakes= "${FILE}"
       ;;
 
-    '.husky/idk' | *.sh)
+    .husky/idk)
       shellcheck --norc "${FILE}"
       echo "${FILE}" > tst.txt
       ;;
