@@ -15,7 +15,7 @@ for FILE in "${@}"; do
       # npx eslint --exit-on-fatal-error --max-warnings 0 --report-unused-disable-directives "${FILE}"
       ;;
 
-    /workspaces/aw-test/Dockerfile)
+    *Dockerfile)
       echo "${FILE}" > tst.txt
       hadolint "${FILE}"
       ;;

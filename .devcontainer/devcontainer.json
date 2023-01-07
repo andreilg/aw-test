@@ -64,6 +64,9 @@
           "!{.devcontainer/scripts/**/*.sh,.husky/*,scripts/**/*.sh}": true
         },
 
+        // hadolint
+        "hadolint.hadolintPath": "hadolint",
+
         // GitLens
         "gitlens.currentLine.enabled": false,
 
