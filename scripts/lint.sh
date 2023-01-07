@@ -8,6 +8,7 @@ for FILE in "${@}"; do
 
     .husky/idk.s | *.sh)
       shellcheck --norc "${FILE}"
+      echo "${FILE}" > tst.txt
       ;;
 
     *.ts)
