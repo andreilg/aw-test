@@ -67,8 +67,8 @@
         // GitLens
         "gitlens.currentLine.enabled": false,
 
-        // // YAML
-        // "redhat.telemetry.enabled": true,
+        // YAML
+        "redhat.telemetry.enabled": true,
 
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",

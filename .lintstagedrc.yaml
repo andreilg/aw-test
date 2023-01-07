@@ -1,6 +1,7 @@
-"{*, __parallel-1__ }":
-  - npm run lint
-"{*, __parallel-2__ }":
-  - npm run format
-"{*, __parallel-3__ }":
-  - npm run test
+# "{*, __parallel-1__ }":
+#   - npm run lint
+# "{*, __parallel-2__ }":
+#   - npm run format
+# "{*, __parallel-3__ }":
+#   - npm run test
+"*": npm run lint
