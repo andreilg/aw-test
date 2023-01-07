@@ -15,7 +15,7 @@ for FILE in "${@}"; do
       # npx eslint --exit-on-fatal-error --max-warnings 0 --report-unused-disable-directives "${FILE}"
       ;;
 
-    Dockerfile)
+    *Dockerfile)
       hadolint "${FILE}"
       ;;
 
