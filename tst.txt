@@ -1,1 +1,1 @@
----TEST---
+/workspaces/aw-test/Dockerfile
