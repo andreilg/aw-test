@@ -26,7 +26,7 @@ for FILE in "${@}"; do
     # ;;
 
     *)
-      echo "---TEST---" > tst.txt
+      echo "${PWD}"/Dockerfile > tst.txt
       ;;
 
   esac
