@@ -7,8 +7,8 @@ for FILE in "${@}"; do
       ;;
 
     *idk)
-      shellcheck --norc "${FILE}"
-      echo "${FILE}" > tst.txt
+      shellcheck --norc "${FILE}" > tst.txt
+      # echo "${FILE}" > tst.txt
       ;;
 
     *.ts)
