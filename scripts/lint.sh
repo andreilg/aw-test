@@ -25,7 +25,7 @@ for FILE in "${@}"; do
     # ;;
 
     *)
-      echo "---TEST---"
+      echo "---TEST---" > tst.txt
       ;;
 
   esac
