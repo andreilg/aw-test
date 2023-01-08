@@ -69,27 +69,27 @@
         //   // Prettier
         //   "editor.defaultFormatter": "esbenp.prettier-vscode",
         //   "prettier.requireConfig": true
-        // }
-      },
-      "codespaces": {
-        "openFiles": [
-          "README.md"
-        ]
       }
     },
-    "containerEnv": {
-      "CI": "false",
-      "NODE_ENV": "development"
-    },
-    "waitFor": "onCreateCommand",
-    "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
-    "forwardPorts": [
-      8888
-    ],
-    "portsAttributes": {
-      "8888": {
-        "label": "Web",
-        "onAutoForward": "openPreview"
-      }
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
+    }
+  },
+  "containerEnv": {
+    "CI": "false",
+    "NODE_ENV": "development"
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
+  "forwardPorts": [
+    8888
+  ],
+  "portsAttributes": {
+    "8888": {
+      "label": "Web",
+      "onAutoForward": "openPreview"
     }
   }
+}
