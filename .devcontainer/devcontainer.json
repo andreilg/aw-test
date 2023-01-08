@@ -7,13 +7,12 @@
     "ghcr.io/devcontainers/features/node:1": {
       "version": "18"
     },
-    "ghcr.io/dhoeric/features/hadolint:1": {
-      "version": "2.12.0"
-    },
-    "ghcr.io/lukewiwa/features/shellcheck:0": {
-      "version": "v0.9.0"
-    },
-
+    // "ghcr.io/dhoeric/features/hadolint:1": {
+    //   "version": "2.12.0"
+    // },
+    // "ghcr.io/lukewiwa/features/shellcheck:0": {
+    //   "version": "v0.9.0"
+    // },
     // Static Site Generator
     "ghcr.io/devcontainers/features/go:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {
@@ -25,74 +24,72 @@
     "vscode": {
       "extensions": [
         // General
-        "arahata.linter-actionlint",
-        "christian-kohler.npm-intellisense",
-        "DavidAnson.vscode-markdownlint",
-        "dbankier.vscode-quick-select",
-        "eamodio.gitlens",
-        "EditorConfig.EditorConfig",
-        "esbenp.prettier-vscode",
-        "exiasr.hadolint",
-        "GitHub.vscode-pull-request-github",
-        "ionutvmi.path-autocomplete",
-        "redhat.vscode-yaml",
-        "timonwong.shellcheck",
-        "Tyriar.sort-lines",
-        "wix.vscode-import-cost",
-
+        // "arahata.linter-actionlint",
+        // "christian-kohler.npm-intellisense",
+        // "DavidAnson.vscode-markdownlint",
+        // "dbankier.vscode-quick-select",
+        // "eamodio.gitlens",
+        // "EditorConfig.EditorConfig",
+        // "esbenp.prettier-vscode",
+        // "exiasr.hadolint",
+        // "GitHub.vscode-pull-request-github",
+        // "ionutvmi.path-autocomplete",
+        // "redhat.vscode-yaml",
+        // "timonwong.shellcheck",
+        // "Tyriar.sort-lines",
+        // "wix.vscode-import-cost",
         // TypeScript
-        "dbaeumer.vscode-eslint",
-
+        // "dbaeumer.vscode-eslint",
         // Static Site Generator
-        "budparr.language-hugo-vscode",
-        "eliostruyf.vscode-hugo-themer"
-
+        // "budparr.language-hugo-vscode",
+        // "eliostruyf.vscode-hugo-themer"
         // "bierner.markdown-mermaid",
         // "humao.rest-client"
         // "patbenatar.advanced-new-file"
         // "sleistner.vscode-fileutils",
       ],
       "settings": {
-        // ZSH
-        "terminal.integrated.defaultProfile.linux": "zsh",
-
-        // ShellCheck
-        "shellcheck.customArgs": ["--norc"],
-        "shellcheck.disableVersionCheck": false,
-        "shellcheck.executablePath": "shellcheck",
-        "shellcheck.ignorePatterns": {
-          "!{.devcontainer/scripts/**/*.sh,.husky/*,scripts/**/*.sh}": true
-        },
-
-        // // hadolint
-        // "hadolint.hadolintPath": "hadolint",
-
-        // GitLens
-        "gitlens.currentLine.enabled": false,
-
-        // YAML
-        "redhat.telemetry.enabled": true,
-
-        // Prettier
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "prettier.requireConfig": true
+        // // ZSH
+        // "terminal.integrated.defaultProfile.linux": "zsh",
+        //   // ShellCheck
+        //   "shellcheck.customArgs": [
+        //     "--norc"
+        //   ],
+        //   "shellcheck.disableVersionCheck": false,
+        //   "shellcheck.executablePath": "shellcheck",
+        //   "shellcheck.ignorePatterns": {
+        //     "!{.devcontainer/scripts/**/*.sh,.husky/*,scripts/**/*.sh}": true
+        //   },
+        //   // // hadolint
+        //   // "hadolint.hadolintPath": "hadolint",
+        //   // GitLens
+        //   "gitlens.currentLine.enabled": false,
+        //   // YAML
+        //   "redhat.telemetry.enabled": true,
+        //   // Prettier
+        //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+        //   "prettier.requireConfig": true
+        // }
+      },
+      "codespaces": {
+        "openFiles": [
+          "README.md"
+        ]
       }
     },
-    "codespaces": {
-      "openFiles": ["README.md"]
-    }
-  },
-  "containerEnv": {
-    "CI": "false",
-    "NODE_ENV": "development"
-  },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
-  "forwardPorts": [8888],
-  "portsAttributes": {
-    "8888": {
-      "label": "Web",
-      "onAutoForward": "openPreview"
+    "containerEnv": {
+      "CI": "false",
+      "NODE_ENV": "development"
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
+    "forwardPorts": [
+      8888
+    ],
+    "portsAttributes": {
+      "8888": {
+        "label": "Web",
+        "onAutoForward": "openPreview"
+      }
     }
   }
-}
