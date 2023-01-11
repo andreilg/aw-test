@@ -8,8 +8,10 @@ on:
 
 jobs:
   setup:
-    # name: Setup
-    uses: ./.github/workflows/setup.yaml
+    name: Setup
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "SETUP"
   
   # build:
   #   # name: Build
