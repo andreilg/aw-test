@@ -5,10 +5,15 @@ on:
 
 jobs:
   install_dependencies:
-    name: Install Dependencies
+    name: Install Node.js Dependencies
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install Dependencies
-        run: bash scripts/install_dependencies.sh
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - run: npm ci
+      - run: npm test

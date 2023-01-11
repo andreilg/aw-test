@@ -4,7 +4,13 @@
 name: Integrate
 
 on:
-  workflow_call:
+  pull_request:
+    branches:    
+      - main
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 
 jobs:
   setup:
@@ -20,3 +26,70 @@ jobs:
     needs: build
     name: Test
     uses: ./.github/workflows/test.yaml
+    
+
+
+# jobs:
+#   trunk_check:
+#     name: Trunk Check Runner
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#       - name: Use Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: "18.x"
+#           cache: "npm"
+#       - name: Install dependencies
+#         run: npm ci
+#       - run: npm run build --if-present
+#       - run: npm test
+
+#       - name: Trunk Check
+#         uses: trunk-io/trunk-action@v1
+
+
+
+# jobs:
+# HAVE EACH ONE BE ITS OWN WORKFLOW, LIKE TEST AND BUILD HAVE MULTIPLE PARALLEL JOBS
+#   setup/prepare/bootstrap:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: ./setup_server.sh
+#   build:
+#     needs: setup
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: ./build_server.sh
+#   test:
+#     needs: build
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: ./test_server.sh
+
+
+
+# # Cache dependencies, generated files?, and artifacts (docs, website, target files, logs / changelog, containers)
+# # jobs:
+# #   example-job:
+#     steps:
+#       - name: Cache node modules
+#         uses: actions/cache@v3
+#         env:
+#           cache-name: cache-node-modules
+#         with:
+#           path: ~/.npm
+#           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+#           restore-keys: |
+#             ${{ runner.os }}-build-${{ env.cache-name }}-
+
+# what do i do about versioning? like functions and docs which can be versioned diff. does it matter?
+
+# when reusable workflow updates (should be semver), make sure all the workflows using it are retriggered? or not worth?
+
+#Any environment variables set in an env context defined at the workflow level in the caller workflow are not propagated to the called workflow.
+#To reuse variables in multiple workflows, set them at the organization, repository, or environment levels and reference them using the vars context.
+#cache artifacts from build and artifacts from test to be used in code coverage test???
