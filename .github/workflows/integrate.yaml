@@ -13,19 +13,37 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  setup:
-    name: Setup
-    uses: ./.github/workflows/setup.yaml
+  audit:
+    name: Audit
+    runs-on: ubuntu-latest
+    container: debian:11
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      # - name: Install Node
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18
+      #     cache: npm
+      # # - name: Install Dependencies
+      # #   run: npm ci
+      - name: Audit
+        run: bash scripts/audit.sh
 
-  build:
-    needs: setup
-    name: Build
-    uses: ./.github/workflows/build.yaml
+# jobs:
+#   setup:
+#     name: Setup
+#     uses: ./.github/workflows/setup.yaml
 
-  test:
-    needs: build
-    name: Test
-    uses: ./.github/workflows/test.yaml
+  # build:
+  #   needs: setup
+  #   name: Build
+  #   uses: ./.github/workflows/build.yaml
+
+  # test:
+  #   # needs: build
+  #   name: Test
+  #   uses: ./.github/workflows/test.yaml
     
 
 
@@ -54,8 +72,7 @@ jobs:
 
 
 # jobs:
-# HAVE EACH ONE BE ITS OWN WORKFLOW, LIKE TEST AND BUILD HAVE MULTIPLE PARALLEL JOBS
-#   setup/prepare/bootstrap:
+#   setup:
 #     runs-on: ubuntu-latest
 #     steps:
 #       - run: ./setup_server.sh
