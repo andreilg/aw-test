@@ -2,11 +2,11 @@ name: Integrate
 
 on:
   pull_request:
-    branches:    
+    branches:
       - main
 
 concurrency:
-  group: ${{ github.head_ref || github.run_id }}
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:
@@ -26,10 +26,12 @@ jobs:
       # #   run: npm ci
       - name: Audit
         run: bash scripts/audit.sh
+      - run: echo $NODE_ENV
 
   demo:
     name: Demo
     runs-on: ubuntu-latest
+    container: debian:11
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -38,24 +40,21 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - run: sleep 28
-
+      - run: echo $NODE_ENV
 # jobs:
 #   setup:
 #     name: Setup
 #     uses: ./.github/workflows/setup.yaml
 
-  # build:
-  #   needs: setup
-  #   name: Build
-  #   uses: ./.github/workflows/build.yaml
+# build:
+#   needs: setup
+#   name: Build
+#   uses: ./.github/workflows/build.yaml
 
-  # test:
-  #   # needs: build
-  #   name: Test
-  #   uses: ./.github/workflows/test.yaml
-    
-
+# test:
+#   # needs: build
+#   name: Test
+#   uses: ./.github/workflows/test.yaml
 
 # jobs:
 #   trunk_check:
@@ -79,8 +78,6 @@ jobs:
 #       - name: Trunk Check
 #         uses: trunk-io/trunk-action@v1
 
-
-
 # jobs:
 #   setup:
 #     runs-on: ubuntu-latest
@@ -96,8 +93,6 @@ jobs:
 #     runs-on: ubuntu-latest
 #     steps:
 #       - run: ./test_server.sh
-
-
 
 # # Cache dependencies, generated files?, and artifacts (docs, website, target files, logs / changelog, containers)
 # # jobs:
