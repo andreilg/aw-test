@@ -11,16 +11,25 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     steps:
-      - run: bash scripts/setup.sh
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup
+        run: bash scripts/setup.sh
 
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - run: bash scripts/build.sh
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: bash scripts/build.sh
 
   test:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - run: bash scripts/test.sh
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Test
+        run: bash scripts/test.sh
