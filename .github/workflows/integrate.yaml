@@ -1,6 +1,3 @@
-# Build (and cache?)
-# Integration Test
-
 name: Integrate
 
 on:
