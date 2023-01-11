@@ -82,7 +82,7 @@
     "NODE_ENV": "development"
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "bash -i -c .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
+  "updateContentCommand": "bash -i .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
   "forwardPorts": [
     8888
   ],
