@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   integrate:
-    # name: Integrate
+    name: Integrate
     uses: ./.github/workflows/integrate.yaml
     # with:
     secrets: inherit
