@@ -9,29 +9,14 @@ on:
 jobs:
   setup:
     name: Setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup
-        run: bash scripts/setup.sh
+    uses: ./.github/workflows/setup.yaml
 
   build:
-    name: Build
     needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Build
-        run: bash scripts/build.sh
+    name: Build
+    uses: ./.github/workflows/build.yaml
 
   test:
-    name: Test
     needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Test
-        run: bash scripts/test.sh
+    name: Test
+    uses: ./.github/workflows/test.yaml

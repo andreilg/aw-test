@@ -1,0 +1,14 @@
+name: Setup
+
+on:
+  workflow_call:
+
+jobs:
+  install_dependencies:
+    name: Install Dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: bash scripts/install_dependencies.sh
