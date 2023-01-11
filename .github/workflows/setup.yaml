@@ -8,4 +8,4 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     steps:
-      run: echo "SETUP"
+      - run: echo "SETUP"
