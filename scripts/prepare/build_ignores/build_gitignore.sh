@@ -1,5 +1,3 @@
-#!/bin/bash
-
 WORKDIR=scripts/prepare/build_ignores/build_gitignore/
 
 rm .gitignore

@@ -34,7 +34,7 @@
         // "exiasr.hadolint",
         // "GitHub.vscode-pull-request-github",
         // "ionutvmi.path-autocomplete",
-        // "redhat.vscode-yaml",
+        "redhat.vscode-yaml",
         // "timonwong.shellcheck",
         // "Tyriar.sort-lines",
         // "wix.vscode-import-cost",
@@ -64,8 +64,8 @@
         //   // "hadolint.hadolintPath": "hadolint",
         //   // GitLens
         //   "gitlens.currentLine.enabled": false,
-        //   // YAML
-        //   "redhat.telemetry.enabled": true,
+        // YAML
+        "redhat.telemetry.enabled": true,
         //   // Prettier
         //   "editor.defaultFormatter": "esbenp.prettier-vscode",
         //   "prettier.requireConfig": true
@@ -82,7 +82,7 @@
     "NODE_ENV": "development"
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "bash .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
+  "updateContentCommand": "bash -i -c .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
   "forwardPorts": [
     8888
   ],

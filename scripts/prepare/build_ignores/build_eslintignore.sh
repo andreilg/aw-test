@@ -1,5 +1,3 @@
-#!/bin/bash
-
 rm .eslintignore
 {
   printf "# Blacklist\n"

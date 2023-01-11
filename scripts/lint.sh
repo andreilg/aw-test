@@ -1,5 +1,3 @@
-#!/bin/bash
-
 WORKDIR="${PWD}"
 
 for FILE in "${@}"; do

@@ -1,3 +1,1 @@
-#!/bin/bash
-
-npx audit-ci
+npx audit-ci --moderate

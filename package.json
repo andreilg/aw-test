@@ -1,24 +1,10 @@
 {
   "type": "module",
-  "scripts": {
-    "audit": "bash scripts/audit.sh",
-    "build": "bash scripts/build.sh",
-    "dev": "bash scripts/dev.sh",
-    "format": "bash scripts/format.sh",
-    "lint": "bash scripts/lint.sh",
-    "prepare": "bash scripts/prepare.sh",
-    "seed": "bash scripts/seed.sh",
-    "test": "bash scripts/test.sh"
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.47.1",
     "@typescript-eslint/parser": "5.47.1",
-    "audit-ci": "^6.4.0",
     "eslint": "8.30.0",
     "eslint-config-prettier": "8.5.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
-    "netlify-cli": "^12.5.0",
     "prettier": "2.8.1",
     "prettier-plugin-go-template": "0.0.13",
     "prettier-plugin-pkg": "0.17.1",

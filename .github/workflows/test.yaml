@@ -1,0 +1,42 @@
+name: Test
+
+on:
+  workflow_call:
+
+
+# name: Test
+
+# on:
+#   workflow_call:
+#     inputs:
+#       # config-path:
+#       #   required: true
+#       #   type: string
+#     secrets:
+#       # token:
+#       #   required: true
+
+# concurrency:
+#   group: ${{ github.head_ref || github.run_id }}
+#   cancel-in-progress: true
+
+# jobs:
+#   audit:
+#     name: Audit
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#       - name: Use Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 18
+#           cache: "npm"
+#       - name: Install dependencies
+#         run: npm ci
+#       - run: npm run build --if-present
+#       - run: npm test
+
+#       - name: Trunk Check
+#         uses: trunk-io/trunk-action@v1

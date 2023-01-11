@@ -1,4 +1,2 @@
-#!/bin/bash
-
-echo 'test'
+echo TEST
 # npx jest --passWithNoTests --bail --findRelatedTests --coverage "${@}"
