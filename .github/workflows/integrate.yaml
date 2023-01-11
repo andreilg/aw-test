@@ -11,12 +11,16 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     steps:
-      - run: echo "SETUP"
-  
-  # build:
-  #   # name: Build
-  #   uses: ./.github/workflows/build.yaml
+      - run: bash scripts/setup.sh
 
-  # test:
-  #   # name: Test
-  #   uses: ./.github/workflows/test.yaml
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - run: bash scripts/build.sh
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - run: bash scripts/test.sh

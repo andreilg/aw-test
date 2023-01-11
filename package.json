@@ -1,15 +1,5 @@
 {
   "type": "module",
-  "scripts": {
-    "audit": "bash scripts/audit.sh",
-    "build": "bash scripts/build.sh",
-    "dev": "bash scripts/dev.sh",
-    "format": "bash scripts/format.sh",
-    "lint": "bash scripts/lint.sh",
-    "prepare": "bash scripts/prepare.sh",
-    "seed": "bash scripts/seed.sh",
-    "test": "bash scripts/test.sh"
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.47.1",
     "@typescript-eslint/parser": "5.47.1",
