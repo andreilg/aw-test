@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - run: sleep 20
+      - run: sleep 25
 
 # jobs:
 #   setup:
