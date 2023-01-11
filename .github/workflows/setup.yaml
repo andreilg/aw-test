@@ -1,0 +1,11 @@
+name: Setup
+
+on:
+  workflow_call:
+
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "SETUP"
