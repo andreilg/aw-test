@@ -32,7 +32,7 @@ jobs:
       - name: Audit
         run: bash scripts/audit.sh
       - run: echo $NODE_ENV
-      - run: echo $MY_SECRET
+      - run: echo ${{ secrets.MY_SECRET }}
 # jobs:
 #   trunk_check:
 #     name: Trunk Check Runner
