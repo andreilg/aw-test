@@ -40,33 +40,13 @@ jobs:
         run: npm ci
       - name: Lint
         uses: trunk-io/trunk-action@v1
+
+
 # # FOR WHEN DOING A FULL CHECK
-# - name: Trunk Check
+# - name: idk
 #   uses: trunk-io/trunk-action@v1
 #   with:
 #     check-mode: all
-
-# jobs:
-#   trunk_check:
-#     name: Trunk Check Runner
-#     runs-on: ubuntu-22.04
-
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v3
-
-#       - name: Use Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: "18.x"
-#           cache: "npm"
-#       - name: Install dependencies
-#         run: npm ci
-#       - run: npm run build --if-present
-#       - run: npm test
-
-#       - name: Trunk Check
-#         uses: trunk-io/trunk-action@v1
 
 # # Cache dependencies, generated files?, and artifacts (docs, website, target files, logs / changelog, containers)
 # # jobs:
