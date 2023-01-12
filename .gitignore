@@ -9,9 +9,9 @@
 *.jpeg
 *.mp3
 *.mp4
-*.png
+*.png      
 *.wav
-*.webp
+  *.webp
 
 # Build Artifacts
 build/
