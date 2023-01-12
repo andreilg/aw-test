@@ -40,13 +40,11 @@ jobs:
         run: npm ci
       - name: Lint
         uses: trunk-io/trunk-action@v1
-
 # # FOR WHEN DOING A FULL CHECK
 # - name: Trunk Check
 #   uses: trunk-io/trunk-action@v1
 #   with:
 #     check-mode: all
-
 
 # jobs:
 #   trunk_check:

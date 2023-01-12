@@ -8,6 +8,7 @@ plugins:
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
+    - actionlint@1.6.22
     - gitleaks@8.15.2
     - eslint@8.31.0
     - markdownlint@0.33.0
