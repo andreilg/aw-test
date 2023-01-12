@@ -9,8 +9,8 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
 env:
   NODE_ENV: development
@@ -40,33 +40,13 @@ jobs:
         run: npm ci
       - name: Lint
         uses: trunk-io/trunk-action@v1
+
+
 # # FOR WHEN DOING A FULL CHECK
-# - name: Trunk Check
+# - name: idk
 #   uses: trunk-io/trunk-action@v1
 #   with:
 #     check-mode: all
-
-# jobs:
-#   trunk_check:
-#     name: Trunk Check Runner
-#     runs-on: ubuntu-22.04
-
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v3
-
-#       - name: Use Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: "18.x"
-#           cache: "npm"
-#       - name: Install dependencies
-#         run: npm ci
-#       - run: npm run build --if-present
-#       - run: npm test
-
-#       - name: Trunk Check
-#         uses: trunk-io/trunk-action@v1
 
 # # Cache dependencies, generated files?, and artifacts (docs, website, target files, logs / changelog, containers)
 # # jobs:
@@ -98,3 +78,17 @@ jobs:
 # so then what that means is that main basically can't fail outside of a freak situation like the runners being down
 # also consider building during the initial PR to have the artifacts ready for code review??? then just publish it?
 # maybe not all artifacts and just "packages", idk
+
+# "devDependencies": {
+#   "@typescript-eslint/eslint-plugin": "5.47.1",
+#   "@typescript-eslint/parser": "5.47.1",
+#   "eslint": "8.30.0",
+#   "eslint-config-prettier": "8.5.0",
+#   "prettier": "2.8.1",
+#   "prettier-plugin-go-template": "0.0.13",
+#   "prettier-plugin-pkg": "0.17.1",
+#   "prettier-plugin-sh": "0.12.8",
+#   "prettier-plugin-toml": "0.3.1",
+#   "rimraf": "^3.0.2",
+#   "typescript": "^4.9.4"
+# }
