@@ -1,6 +1,7 @@
 {
   "name": "Jamstack",
-  "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
+  // "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/base:1-jammy",
   "features": {
     // General
     // "ghcr.io/devcontainers/features/git:1": {},
