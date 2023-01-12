@@ -32,34 +32,7 @@ jobs:
       - name: Audit
         run: bash scripts/audit.sh
       - run: echo $NODE_ENV
-
-  demo:
-    name: Demo
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
-      - run: echo $NODE_ENV
-# jobs:
-#   setup:
-#     name: Setup
-#     uses: ./.github/workflows/setup.yaml
-
-# build:
-#   needs: setup
-#   name: Build
-#   uses: ./.github/workflows/build.yaml
-
-# test:
-#   # needs: build
-#   name: Test
-#   uses: ./.github/workflows/test.yaml
-
+      - run: echo $GITHUB_TOKEN
 # jobs:
 #   trunk_check:
 #     name: Trunk Check Runner
@@ -81,22 +54,6 @@ jobs:
 
 #       - name: Trunk Check
 #         uses: trunk-io/trunk-action@v1
-
-# jobs:
-#   setup:
-#     runs-on: ubuntu-22.04
-#     steps:
-#       - run: ./setup_server.sh
-#   build:
-#     needs: setup
-#     runs-on: ubuntu-22.04
-#     steps:
-#       - run: ./build_server.sh
-#   test:
-#     needs: build
-#     runs-on: ubuntu-22.04
-#     steps:
-#       - run: ./test_server.sh
 
 # # Cache dependencies, generated files?, and artifacts (docs, website, target files, logs / changelog, containers)
 # # jobs:
