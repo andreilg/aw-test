@@ -6,7 +6,6 @@
   "files.autoSave": "onFocusChange",
   "git.autofetch": true,
   "search.exclude": {
-    // Generated Files
     "CHANGELOG.md": true,
     "package-lock.json": true
   },

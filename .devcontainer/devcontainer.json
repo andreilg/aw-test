@@ -25,6 +25,9 @@
     "vscode": {
       "extensions": [
         // General
+        "GitHub.vscode-pull-request-github",
+        "ms-vsliveshare.vsliveshare",
+        "Trunk.io"
         // "arahata.linter-actionlint",
         // "christian-kohler.npm-intellisense",
         // "DavidAnson.vscode-markdownlint",
@@ -50,6 +53,8 @@
         // "sleistner.vscode-fileutils",
       ],
       "settings": {
+        // Trunk
+        "editor.defaultFormatter": "Trunk.io"
         // // ZSH
         // "terminal.integrated.defaultProfile.linux": "zsh",
         //   // ShellCheck
