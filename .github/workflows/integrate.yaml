@@ -33,8 +33,8 @@ jobs:
       # #   run: npm ci
       - name: Audit
         run: bash scripts/audit.sh
-      - run: echo $NODE_ENV
-      - run: echo $MY_SECRET
+      - run: echo "${NODE_ENV}"
+      - run: echo "${MY_SECRET}"
 # jobs:
 #   trunk_check:
 #     name: Trunk Check Runner
