@@ -25,7 +25,7 @@
     "vscode": {
       "extensions": [
         // General
-        // "EditorConfig.EditorConfig",
+        "EditorConfig.EditorConfig",
         "GitHub.vscode-pull-request-github",
         "ms-vsliveshare.vsliveshare",
         "Trunk.io"
@@ -78,7 +78,9 @@
       }
     },
     "codespaces": {
-      "openFiles": ["README.md"]
+      "openFiles": [
+        "README.md"
+      ]
     }
   },
   "containerEnv": {
@@ -87,7 +89,9 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "bash -i .devcontainer/scripts/updateContentCommand.sh > ~/updateContentCommand.log",
-  "forwardPorts": [8888],
+  "forwardPorts": [
+    8888
+  ],
   "portsAttributes": {
     "8888": {
       "label": "Web",
