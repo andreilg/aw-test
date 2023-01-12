@@ -78,3 +78,12 @@ jobs:
 #Any environment variables set in an env context defined at the workflow level in the caller workflow are not propagated to the called workflow.
 #To reuse variables in multiple workflows, set them at the organization, repository, or environment levels and reference them using the vars context.
 #cache artifacts from build and artifacts from test to be used in code coverage test???
+
+# SET IT UP SO THAT if main fails, you can't run merge any more pull requests (even currently merging).
+# prob use a context variable or something.
+# Prob should set it up so that you do a reg partial PR test and if u get approval then
+# u should do a /trunk merge automatically which will run the entire full suite of tests on everything b4 merging
+# that way whats being merged is completely freshly up to date and totally correct and has no logical pr merge conflicts either
+# so then what that means is that main basically can't fail outside of a freak situation like the runners being down
+# also consider building during the initial PR to have the artifacts ready for code review??? then just publish it?
+# maybe not all artifacts and just "packages", idk
