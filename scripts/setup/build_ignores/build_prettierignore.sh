@@ -1,4 +1,4 @@
-WORKDIR=scripts/prepare/build_ignores/build_prettierignore/
+WORKDIR=scripts/setup/build_ignores/build_prettierignore/
 
 rm .prettierignore
 {

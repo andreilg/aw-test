@@ -1,4 +1,4 @@
-WORKDIR=scripts/prepare/
+WORKDIR=scripts/setup/
 
 echo SETUP
 # bash "${WORKDIR}"install_actionlint.sh
