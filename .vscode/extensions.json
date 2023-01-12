@@ -5,7 +5,7 @@
     "github.remotehub",
     "github.vscode-pull-request-github",
     "ms-vscode-remote.vscode-remote-extensionpack",
-    "ms-vsliveshare.vsliveshare-pack",
+    "ms-vsliveshare.vsliveshare",
     "vscode-icons-team.vscode-icons"
   ]
 }
