@@ -1,6 +1,5 @@
 {
   "name": "Jamstack",
-  // "image": "mcr.microsoft.com/devcontainers/base:0-debian-11",
   "image": "mcr.microsoft.com/devcontainers/base:1-ubuntu-22.04",
   "features": {
     // General
@@ -25,7 +24,7 @@
     "vscode": {
       "extensions": [
         // General
-        "EditorConfig.EditorConfig",
+        // "EditorConfig.EditorConfig",
         "GitHub.vscode-pull-request-github",
         "ms-vsliveshare.vsliveshare",
         "Trunk.io"

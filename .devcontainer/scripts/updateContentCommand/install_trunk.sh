@@ -1,4 +1,4 @@
 curl https://get.trunk.io -fsSL | bash -s -- -y
-trunk
+# trunk
 # trunk check
 # trunk fmt
