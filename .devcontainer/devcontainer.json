@@ -24,7 +24,7 @@
     "vscode": {
       "extensions": [
         // General
-        // "EditorConfig.EditorConfig",
+        "EditorConfig.EditorConfig",
         "GitHub.vscode-pull-request-github",
         "ms-vsliveshare.vsliveshare",
         "Trunk.io"
