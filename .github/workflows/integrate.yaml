@@ -22,8 +22,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Audit
+      - name: Audit NPM Dependencies
         run: bash scripts/audit.sh
+      - run: echo "${NODE_ENV}"
 
   lint:
     name: Lint
@@ -31,17 +32,16 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Install Node
+      - name: Install Node & Cache NPM Dependencies
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
-      - name: Install Node Dependencies
+      - name: Install NPM Dependencies
         run: npm ci
-      - name: Lint
+      - name: Lint Modified Files & Cache Lint Dependencies
         uses: trunk-io/trunk-action@v1
-
-
+      - run: echo "${NODE_ENV}"
 # # FOR WHEN DOING A FULL CHECK
 # - name: idk
 #   uses: trunk-io/trunk-action@v1

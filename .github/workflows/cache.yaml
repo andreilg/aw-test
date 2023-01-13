@@ -4,36 +4,33 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+
+# permissions:
+#   contents: read
+
+env:
+  NODE_ENV: development
 
 jobs:
-  node:
-    name: Node
+  lint:
+    name: Lint
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Cache Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
-
-  trunk:
-    name: Trunk
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
-      - name: Install Node Dependencies
-        run: npm ci
-      - name: Cache & Upload Trunk
-        uses: trunk-io/trunk-action@v1
-        with:
-          check-mode: all
-          trunk-token: ${{ secrets.TRUNK_TOKEN }}
+      # - name: Install Node & Cache NPM Dependencies
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18
+      #     cache: npm
+      # - name: Install NPM Dependencies
+      #   run: npm ci
+      # - name: Lint All Files, Cache Lint Dependencies, & Upload Results
+      #   uses: trunk-io/trunk-action@v1
+      #   with:
+      #     check-mode: all
+      #     trunk-token: ${{ secrets.TRUNK_TOKEN }}
